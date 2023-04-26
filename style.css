@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.home{
+    min-height: 300vh;
+    width: 100%;
+    background-color: #181818;
+    color: #fff;
+}
+
+.header{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-transform: uppercase;
+    background-color: #111;
+    border-bottom: 2px solid rgba(51, 51, 51, .25);
+}
+
+.header .logo img{
+    height: 32px;
+    width: 95px;
+}
+
