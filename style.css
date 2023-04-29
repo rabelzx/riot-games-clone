@@ -31,8 +31,8 @@
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    /*background-color: #111;*/
-    /*border-bottom: 2px solid rgba(51, 51, 51, .25);*/
+    /*background-color: #111;
+    border-bottom: 2px solid rgba(51, 51, 51, .25);*/
 }
 
 .header .content{
@@ -81,6 +81,68 @@
     letter-spacing: .08em;
     text-transform: uppercase;
 }
+
+.header .content.right{
+    padding-right: 32px;
+}
+
+.header .content.right > i{
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.header .search-container{
+    display: flex;
+    justify-content: space-between;
+    height: 34.6px;
+    padding: 4.8px 22.4px; 
+    border-radius: 1.6em;
+    box-shadow: inset 0 0 0 1px #f9f9f9;
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+
+}
+
+.header .search-container input{
+    background-color: transparent;
+    border: hidden;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    outline: 0;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.header .search-container input::placeholder{
+    color: #fff;
+}
+
+.header .search-container button{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header .login{
+    text-align: center;
+    cursor: pointer;
+    height: 34.6px;
+    border-radius: 1.6em;
+    padding: .6rem 1.4rem;
+    margin-left: 6px;
+    margin-top: 18px!important;
+    margin-bottom: 20px!important;
+    background-color: #d1363a;
+    border: none;
+    font-weight: 700;
+}
+
 
 ::-webkit-scrollbar {
     width: 0; /* Largura da barra de rolagem */
