@@ -31,8 +31,12 @@
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    /*background-color: #111;
-    border-bottom: 2px solid rgba(51, 51, 51, .25);*/
+    transition: background-color .1s ease-in-out;
+}
+
+.header.color{
+    background-color: #111;
+    border-bottom: 2px solid rgba(51, 51, 51, .25);
 }
 
 .header .content{
@@ -57,19 +61,26 @@
     margin-bottom: 1px;
 }
 
-.header .content.left .item.fist-logo{
+.header .content.left .fist-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 85;
     height: 27;
     fill: #f9f9f9;
     margin: 0;
 }
 
-.header .content.left .item.fist-logo:hover{
+.header .content.left .fist-logo:hover{
    cursor: pointer;
     fill: #d1363a;
 }
 
-.header .content.left .item.text{
+.header .content.left .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     height: 66px;
     padding: 0;
     margin: auto;
@@ -79,7 +90,34 @@
     font-weight: 600;
     line-height: 120%;
     letter-spacing: .08em;
+}
+
+.header .content.left .item p{
     text-transform: uppercase;
+}
+
+.header .hidden-list{
+    border-top: 5px solid #d1363a;
+    position: absolute;
+    top: 69px;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,.2);
+    border-radius: 0 0 2px 2px;
+    background-color: #292929;
+    text-align: left;
+    font-size: 13px;
+    min-width: 200px;
+    padding: 16px 32px;
+    left: 0;
+    display: none;
+}
+
+.header .hidden-list.active{
+    display: block;
+}
+
+.header .hidden-list li{
+    margin: 5px 16px;
+    list-style-type: none;
 }
 
 .header .content.right{
