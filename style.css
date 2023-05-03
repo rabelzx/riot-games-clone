@@ -118,6 +118,16 @@
 .header .hidden-list li{
     margin: 5px 16px;
     list-style-type: none;
+    transition: .1s ease;
+}
+
+
+.header .hidden-list li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.header .hidden-list li:hover{
+    background-color: #d1363a;
 }
 
 .header .content.right{
