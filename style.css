@@ -97,11 +97,11 @@
 }
 
 .header .hidden-list{
-    border-top: 5px solid #d1363a;
+    border-top: 4px solid #d1363a;
     position: absolute;
-    top: 69px;
+    top: 62px;
     box-shadow: 0px 4px 16px 0px rgba(0,0,0,.2);
-    border-radius: 0 0 2px 2px;
+    border-radius:  2px;
     background-color: #292929;
     text-align: left;
     font-size: 13px;
@@ -115,8 +115,22 @@
     display: block;
 }
 
+.header .underline{
+    background-color: rgb(209, 54, 57);
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    display: none;
+}
+
+.header .underline.active{
+    display: block;
+}
+
 .header .hidden-list li{
-    margin: 5px 16px;
+    padding: 8px 16px;
     list-style-type: none;
     transition: .1s ease;
 }
@@ -127,7 +141,8 @@
 }
 
 .header .hidden-list li:hover{
-    background-color: #d1363a;
+    background-color: rgba(128,128, 128, .3);
+    border-radius: 6.4px;
 }
 
 .header .content.right{
@@ -152,6 +167,11 @@
     line-height: normal;
     text-align: left;
 
+}
+
+.header .search-container.active{
+    background-color: #2b2a29;
+    box-shadow: none;
 }
 
 .header .search-container input{

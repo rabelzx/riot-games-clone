@@ -1,14 +1,21 @@
 const header = document.querySelector('.header')
+
 const firstItem = document.getElementById('first-item')
 const secondItem = document.getElementById('second-item')
+const thirdItem = document.getElementById('third-item')
 const firstList = document.getElementById('first-list')
 const secondList = document.getElementById('second-list')
+const thirdList = document.querySelector('.underline')
+
+const search = document.querySelector('.search-container')
 
 window.addEventListener('scroll', function() {
     if (window.scrollY > 0){
         header.classList.add('color')
+        search.classList.add('active')
     } else {
         header.classList.remove('color')
+        search.classList.remove('active')
     }
 })
 
@@ -28,3 +35,10 @@ secondItem.addEventListener('mouseleave', () => {
     secondList.classList.remove('active')
 })
 
+thirdItem.addEventListener('mouseover', () => {
+    thirdList.classList.add('active')
+})
+
+thirdItem.addEventListener('mouseleave', () => {
+    thirdList.classList.remove('active')
+})
