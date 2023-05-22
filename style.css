@@ -6,14 +6,11 @@
 }
 
 .home{
-    min-height: 200vh;
-    max-width: 100%;
+    height: 1000vh;
     background-color: #181818;
-    
 }
 
 .home > img{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -210,6 +207,30 @@
     border: none;
     font-weight: 700;
 }
+
+main .novidades{
+    padding: 100px 80px;
+    color: #fff;
+    height: 100vh;
+    background: radial-gradient(55% 180% at 5% 100%,rgba(163, 38, 41, 0.3) 0, rgba(10,10,10,0) 75%, rgba(10,10,10,0) 100%);
+}
+
+main .novidades>h1{
+    margin-bottom: 3.75rem;
+}
+
+main .novidades .container .news-left > img{
+    width: 100%;
+}
+
+main .novidades .container .news-left > img{
+    width: 100%;
+}
+
+
+
+
+
 
 
 ::-webkit-scrollbar {
