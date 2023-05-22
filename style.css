@@ -211,27 +211,65 @@
 main .novidades{
     padding: 100px 80px;
     color: #fff;
-    height: 100vh;
+    height: 120vh;
     background: radial-gradient(55% 180% at 5% 100%,rgba(163, 38, 41, 0.3) 0, rgba(10,10,10,0) 75%, rgba(10,10,10,0) 100%);
 }
 
-main .novidades>h1{
+main .novidades > h2{
+    font-size: 3rem;
     margin-bottom: 3.75rem;
+    font-weight: 700;
+}
+
+main .novidades .container{
+    display: flex; 
+}
+
+main .novidades .container .news-left{
+    width: 100%;
+    margin-right: 20px;
 }
 
 main .novidades .container .news-left > img{
     width: 100%;
+    border-radius: 8px;
+    transition: all .2s ease-out;
 }
 
-main .novidades .container .news-left > img{
-    width: 100%;
+main .novidades .container .news-left > img:hover{
+    cursor: pointer;
+    border: 1px solid #fff;
 }
 
+main .novidades .container .news-right{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+main .novidades .container .news-right li{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: rgba(128,128,128,.2);
+    min-height: 120px;
+    transition: .25s ease-out;
+}
 
+main .novidades .container .news-right li h3{
+    padding: 1rem 0.5rem 1rem 1.625rem;
+}
 
+main .novidades .container .news-right li:hover{
+    cursor: pointer;
+}
 
-
-
+main .novidades .container .news-right img{
+    max-width: 40%;
+    border-radius: 0px 8px 8px 0px;
+}
 
 ::-webkit-scrollbar {
     width: 0; /* Largura da barra de rolagem */
