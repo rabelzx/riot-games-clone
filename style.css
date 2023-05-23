@@ -7,7 +7,7 @@
 
 .home{
     height: 1000vh;
-    background-color: #181818;
+    background-color: #1f1f1f; 
 }
 
 .home > img{
@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-between;
     transition: background-color .1s ease-in-out;
+    z-index: 100;
 }
 
 .header.color{
@@ -212,11 +213,11 @@ main .novidades{
     padding: 100px 80px;
     color: #fff;
     height: 120vh;
-    background: radial-gradient(55% 180% at 5% 100%,rgba(163, 38, 41, 0.3) 0, rgba(10,10,10,0) 75%, rgba(10,10,10,0) 100%);
+    background: radial-gradient(55% 180% at 5% 100%,rgba(163, 38, 41, 0.3) 0, rgba(193, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
 }
 
 main .novidades > h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 3.75rem;
     font-weight: 700;
 }
@@ -226,19 +227,22 @@ main .novidades .container{
 }
 
 main .novidades .container .news-left{
+    position: relative;
     width: 100%;
+    height: 100%;
     margin-right: 20px;
+    transition: .25s ease-out;
+    border-radius: 8px;
 }
 
 main .novidades .container .news-left > img{
     width: 100%;
     border-radius: 8px;
-    transition: all .2s ease-out;
 }
 
-main .novidades .container .news-left > img:hover{
+main .novidades .container .news-left:hover{
     cursor: pointer;
-    border: 1px solid #fff;
+    box-shadow: 0px 0px 0px 0.15rem #767676
 }
 
 main .novidades .container .news-right{
@@ -248,27 +252,58 @@ main .novidades .container .news-right{
     flex-direction: column;
     gap: 10px;
 }
- 
+
 main .novidades .container .news-right li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 8px;
     background-color: rgba(128,128,128,.2);
     min-height: 120px;
-    transition: .25s ease-out;
-}
-
-main .novidades .container .news-right li h3{
-    padding: 1rem 0.5rem 1rem 1.625rem;
+    transition: 0.25s ease-out;
 }
 
 main .novidades .container .news-right li:hover{
     cursor: pointer;
+    box-shadow: 0px 0px 0px 0.15rem #767676
+}
+
+main .novidades .container .news-right li h3{
+    padding: 1rem 0.5rem 1rem 1.625rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+main .novidades .container p{
+    margin-top: 5px;
+    letter-spacing: .0.9rem;
+    text-transform: uppercase;
+    color: rgba(101,100,98,.9);
+    font-size: 1.2rem;
+}
+
+main .novidades .container .news-left h3{
+    position: absolute; 
+    bottom: 0;
+    font-size: 2.5rem;
+    padding: 2rem;
 }
 
 main .novidades .container .news-right img{
     max-width: 40%;
     border-radius: 0px 8px 8px 0px;
+    clip-path: polygon(15% 0,100% 0,100% 100%,0 100%);
+}
+
+main .our-games{
+    color: #fff;
+    padding: 100px 80px;
+}
+
+main .our-games h2{
+    font-size: 3rem;
+    margin-bottom: 3.75rem;
+    font-weight: 700;
 }
 
 ::-webkit-scrollbar {
