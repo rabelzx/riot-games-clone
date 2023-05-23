@@ -240,6 +240,13 @@ main .novidades .container .news-left > img{
     border-radius: 8px;
 }
 
+main .novidades .container .news-left h3{
+    position: absolute; 
+    bottom: 0;
+    font-size: 2.5rem;
+    padding: 2rem;
+
+}
 main .novidades .container .news-left:hover{
     cursor: pointer;
     box-shadow: 0px 0px 0px 0.15rem #767676
@@ -270,7 +277,7 @@ main .novidades .container .news-right li:hover{
 
 main .novidades .container .news-right li h3{
     padding: 1rem 0.5rem 1rem 1.625rem;
-    font-size: 1.4rem;
+    font-size: 1.125rem;
     line-height: 1.2;
 }
 
@@ -279,17 +286,13 @@ main .novidades .container p{
     letter-spacing: .0.9rem;
     text-transform: uppercase;
     color: rgba(101,100,98,.9);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-main .novidades .container .news-left h3{
-    position: absolute; 
-    bottom: 0;
-    font-size: 2.5rem;
-    padding: 2rem;
-}
 
 main .novidades .container .news-right img{
+
+    height: 100%;
     max-width: 40%;
     border-radius: 0px 8px 8px 0px;
     clip-path: polygon(15% 0,100% 0,100% 100%,0 100%);
