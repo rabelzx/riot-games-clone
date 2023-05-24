@@ -291,14 +291,13 @@ main .novidades .container p{
 
 
 main .novidades .container .news-right img{
-
     height: 100%;
     max-width: 40%;
     border-radius: 0px 8px 8px 0px;
     clip-path: polygon(15% 0,100% 0,100% 100%,0 100%);
 }
 
-main .our-games{
+main .second-section .our-games{
     color: #fff;
     padding: 100px 80px;
 }
@@ -307,6 +306,31 @@ main .our-games h2{
     font-size: 3rem;
     margin-bottom: 3.75rem;
     font-weight: 700;
+}
+
+main .second-section .our-games ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: calc(50% - 10px)  calc(50% - 10px); 
+    list-style: none;
+    column-gap: 20px;
+}
+
+main .second-section .our-games ul li{
+    margin-bottom: 50px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+main .second-section .our-games .game-card{
+    
+    cursor: pointer;
+}
+
+main .second-section .our-games img{
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
 }
 
 ::-webkit-scrollbar {
