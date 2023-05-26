@@ -5,7 +5,7 @@
     font-family: 'Maven Pro', sans-serif;
 }
 
-.home{
+body{
     height: 1000vh;
     background-color: #1f1f1f; 
 }
@@ -390,7 +390,44 @@ main .second-section .entretenimento .entretenimento-list img:hover{
     box-shadow: 0px 0px 0px 0.15rem #767676; 
 }
 
+main .second-section .riot-forge{
+    margin-top: 3.75rem;
+    padding: 0px 80px 0px 80px;
+}
 
+main .second-section .riot-forge .tittle-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .second-section .riot-forge .tittle-button .carrossel-button{
+    display: flex;
+    gap: 30px;
+    margin-right: 10px;
+}
+
+main .second-section .riot-forge .tittle-button button{
+   background: none;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+}
+
+main .second-section .riot-forge .carrossel-wrapper{
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+main .second-section .riot-forge .carrossel-wrapper .carrossel img{
+    height: 100%;
+    margin: 0px 10px 0px 10px;
+    width: calc((100% / 3) - 20px);
+    object-fit: cover;
+    border-radius: 8px;
+}
 
 ::-webkit-scrollbar {
     width: 0; /* Largura da barra de rolagem */
