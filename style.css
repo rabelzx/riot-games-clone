@@ -408,25 +408,34 @@ main .second-section .riot-forge .tittle-button .carrossel-button{
 
 main .second-section .riot-forge .tittle-button button{
    background: none;
-   color: #fff;
+   color:#767676; 
    border: none;
    cursor: pointer;
 }
 
 main .second-section .riot-forge .carrossel-wrapper{
-    white-space: nowrap;
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
+    position: relative;
 }
 
+main .second-section .riot-forge .carrossel-wrapper .carrossel{
+    white-space: nowrap;
+    font-size: 0px;
+    overflow: scroll;
+    scroll-behavior: smooth; 
+}
 
 main .second-section .riot-forge .carrossel-wrapper .carrossel img{
     height: 100%;
-    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    margin: 10px 10px 10px 10px;
     width: calc((100% / 3) - 20px);
     object-fit: cover;
     border-radius: 8px;
+    transition: 0.25s ease-out;
+}
+
+main .second-section .riot-forge .carrossel-wrapper .carrossel img:hover{
+    box-shadow: 0px 0px 0px 0.15rem #767676; 
 }
 
 ::-webkit-scrollbar {

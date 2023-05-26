@@ -42,3 +42,19 @@ thirdItem.addEventListener('mouseover', () => {
 thirdItem.addEventListener('mouseleave', () => {
     thirdList.classList.remove('active')
 })
+
+
+//carrosel
+const carrossel = document.querySelector(".carrossel");
+const leftArrow = document.querySelector(".left-arrow")
+const rightArrow = document.querySelector(".right-arrow")
+
+leftArrow.addEventListener("click", () => {
+    console.log("esquerda"); 
+    carrossel.scrollLeft -= carrossel.offsetWidth;
+})
+
+rightArrow.addEventListener("click", () => {
+    console.log("direita"); 
+    carrossel.scrollLeft += carrossel.offsetWidth;
+})
