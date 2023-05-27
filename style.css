@@ -439,15 +439,64 @@ main .second-section .riot-forge .carrossel-wrapper .carrossel img:hover{
 }
 
 main .vagas{
-    background-color: #fff;
+    background-color: #e7e6e3;
     margin-top: 100px;
     display: flex;
     height: 100%;
+    flex: 1 1 50%;
 }
 
 main .vagas .vagas-inner{
-    padding: 80px 30px;
+    padding: 80px 45px;
     text-align: center;
+}
+
+main .vagas .vagas-inner h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+main .vagas .vagas-inner > p{
+    font-size: 1.25rem;
+    color: #656462;
+    line-height: 1.2;
+    letter-spacing: -.03rem;
+    margin: 0 auto 2.5rem;
+    font-weight: 600;
+}
+
+main .vagas .vagas-inner .vagas-count{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+main .vagas .vagas-inner .vagas-count p{
+    background-color: rgba(173,172,170,.2);
+    padding: 20px;
+    flex: 1 1 260px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.1s ease;
+    color: #656462;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+main .vagas .vagas-inner .vagas-count span{
+    color: #0a0a0a;
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+main .vagas .vagas-inner .vagas-count p:hover{
+    cursor: pointer;
+    background-color:#c0bfbe
+ 
 }
 
 main .vagas .vagas-inner button{
@@ -471,11 +520,17 @@ main .vagas .vagas-inner button:hover{
 
 main .vagas img{
     clip-path: polygon(10% 0,100% 0,100% 100%,0 100%);
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
+    width: 100%;
+    max-height: 600px;
 }
-
 
 ::-webkit-scrollbar {
     width: 0; /* Largura da barra de rolagem */
 }
+
+::selection {
+    background-color: #ff0000; /* Cor de fundo da seleção */
+}
+
