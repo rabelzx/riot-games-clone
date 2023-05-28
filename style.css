@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,6 +12,7 @@ body{
 }
 
 .home > img{
+   
     top: 0;
     left: 0;
     width: 100%;
@@ -524,6 +526,118 @@ main .vagas img{
     height: 100%;
     width: 100%;
     max-height: 600px;
+}
+footer{
+    background-color: #252423;
+    padding: 0px 40px 30px;
+
+}
+footer .footer-inner{
+    display: flex;
+    position: relative;
+    color: #8a8887;
+    text-align: center; 
+    align-items: center;   
+    padding: 30px 0;
+}
+
+footer .footer-inner svg{
+    vertical-align: top;
+    margin-right:20px;
+    fill: #8a8887;
+    transition: 0.2s;
+}
+
+footer .footer-inner svg:hover{
+   cursor: pointer;
+    fill: #d1363a;
+}
+
+footer a{
+    color: #8a8887;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 800;
+    letter-spacing: .08rem;
+    font-size: 11px;
+    margin: 0 8px;
+    transition: 0.3s ease;
+}
+
+footer a:hover{
+    color: #e7e6e3;
+    text-decoration:underline
+}
+
+footer .footer-inner .social-media{
+    position: absolute;
+    cursor: default;
+    right: 20px;
+}
+
+footer .footer-inner .social-media i{
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+footer .footer-inner .social-media i:hover{
+    cursor: pointer;
+    color: #d1363a;
+}
+
+footer .copyright{
+    display: flex;
+    position: relative;
+    text-align: center; 
+    align-items: center;   
+    padding: 30px 0;
+}
+
+footer .copyright a{
+   padding: 0px;
+   margin: 0px;
+}
+
+footer .copyright p{
+    color: #8a8887;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+footer .copyright .vertical-line{
+    border: 1px solid #656462;
+    height: 20px;
+    margin: 0 20px;
+}
+
+footer .copyright .top{
+    right: 0;
+    position: absolute;
+    font-size: 14px; 
+    background: none;
+    color: #8a8887;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+footer .copyright .top:hover{
+    cursor: pointer;
+    color: #e7e6e3;
+
+}
+
+footer .copyright .top:hover{
+    text-decoration: none; 
+}
+
+footer hr{
+    height: 1px;
+    background-color: #8a8887;
+    border: none;
+
 }
 
 ::-webkit-scrollbar {

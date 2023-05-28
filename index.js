@@ -58,3 +58,12 @@ rightArrow.addEventListener("click", () => {
     console.log("direita"); 
     carrossel.scrollLeft += carrossel.offsetWidth;
 })
+
+//scroll para o top
+
+const scrollButton = document.getElementById('topButton');
+
+scrollButton.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+})
+
