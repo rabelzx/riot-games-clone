@@ -7,8 +7,8 @@
 }
 
 body{
-    height: 100%;
     background-color: #1f1f1f; 
+    height: 100%;
 }
 
 .home > img{
@@ -355,30 +355,40 @@ main .second-section .esports {
     margin-top: 3.75rem;
 }
 
-
-
-main .second-section .esports .esports-list{
+main .second-section .esports ul{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
     gap: 20px;
-    justify-content: space-between;
 }
 
-main .second-section .esports .esports-list img{
+main .second-section .esports ul li{
+    position: relative;
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 30px;
+    overflow: hidden;
     border-radius: 8px;
-    width: calc(50% - 10px);
-    object-fit: cover;
-    background-size: cover;
     transition: 0.25s ease-out;
 }
 
-main .second-section .esports .esports-list .esports-logo{
+main .second-section .esports img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+main .second-section .esports .esport-logo{
     position: absolute;
     object-fit: contain;
     max-width: 20%;
     left: 55px;
 }
 
-main .second-section .esports .esports-list img:hover{
+main .second-section .esports ul li:hover{
     cursor: pointer;
     box-shadow: 0px 0px 0px 0.15rem #767676; 
 }
@@ -388,21 +398,40 @@ main .second-section .entretenimento{
     padding: 0px 80px 0px 80px;
 }
 
-main .second-section .entretenimento .entretenimento-list{
+main .second-section .entretenimento ul{
     display: flex;
-    justify-content: space-between;
-    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    gap: 20px;
 }
 
-main .second-section .entretenimento .entretenimento-list img{
+main .second-section .entretenimento ul li{
+    position: relative;
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 30px;
+    overflow: hidden;
     border-radius: 8px;
-    width: calc(50% - 10px);
-    object-fit: cover;
-    background-size: cover;
     transition: 0.25s ease-out;
 }
 
-main .second-section .entretenimento .entretenimento-list img:hover{
+main .second-section .entretenimento img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+main .second-section .entretenimento .entretenimento-logo{
+    position: absolute;
+    object-fit: contain;
+    max-width: 20%;
+    left: 55px;
+}
+
+main .second-section .entretenimento ul li:hover{
     cursor: pointer;
     box-shadow: 0px 0px 0px 0.15rem #767676; 
 }
@@ -421,6 +450,15 @@ main .second-section .riot-forge .tittle-button .carrossel-button{
     display: flex;
     gap: 30px;
     margin-right: 10px;
+}
+
+main .second-section .riot-forge .tittle-button .carrossel-button i{
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+main .second-section .riot-forge .tittle-button .carrossel-button i:hover{
+    color: #fff; 
 }
 
 main .second-section .riot-forge .tittle-button button{
@@ -655,6 +693,14 @@ footer hr{
 
 }
 
+.mensagem-tela-pequena {
+    display: none;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40vh;
+    color: #fff;
+  }
+
 ::-webkit-scrollbar {
     width: 0; /* Largura da barra de rolagem */
 }
@@ -662,4 +708,21 @@ footer hr{
 ::selection {
     background-color: #ff0000; /* Cor de fundo da seleção */
 }
+
+@media screen and (max-width: 1060px) {
+    .home {
+      display: none;
+      background-color: #1f1f1f; 
+    }
+
+    body{
+        display: flex;
+        padding: 20px;
+    }
+
+    .mensagem-tela-pequena{
+        display: flex;
+    }
+   
+  }
 
