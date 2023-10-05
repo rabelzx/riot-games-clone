@@ -626,11 +626,11 @@ footer a:hover{
 footer .footer-inner .social-media{
     position: absolute;
     cursor: default;
-    right: 20px;
+    right: 0;
 }
 
 footer .footer-inner .social-media i{
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     transition: 0.3s;
 }
 
@@ -695,10 +695,11 @@ footer hr{
 
 .mensagem-tela-pequena {
     display: none;
+    width: 100%;
     text-align: center;
     font-size: 25px;
-    margin-top: 40vh;
     color: #fff;
+    margin-top: 40vh;
   }
 
 ::-webkit-scrollbar {
@@ -709,14 +710,13 @@ footer hr{
     background-color: #ff0000; /* Cor de fundo da seleção */
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 780px) {
     .home {
       display: none;
       background-color: #1f1f1f; 
     }
 
     body{
-        display: flex;
         padding: 20px;
     }
 
